@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
 body {
-  background-color: #fbf5f5;
+  background-color: #fff;
   font-family: Poppins, sans-serif;
   margin: 0 auto;
   padding: 0;
@@ -41,6 +41,7 @@ h3 {
 
 .recent-score:nth-child(even) {
   background-color: rgb(154, 155, 164);
+  border-radius: 5px;
 }
 
 .container form {
@@ -48,10 +49,11 @@ h3 {
 }
 
 .container form input {
-  width: 94.5%;
+  width: 95%;
   height: 30px;
   padding: 5px 10px;
   margin: 10px 0;
+  border-radius: 5px;
 }
 
 button:hover {
@@ -77,4 +79,33 @@ button:hover {
 
 .success {
   background-color: green;
+}
+
+@media screen and (max-width: 510px) {
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .container .scores {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 42px;
+  }
+
+  .container form {
+    padding: 0;
+  }
+
+  .container form input {
+    width: 91.5%;
+    height: 30px;
+    padding: 5px 10px;
+    margin: 10px 0;
+  }
 }
