@@ -80,3 +80,32 @@ button:hover {
 .success {
   background-color: green;
 }
+
+@media screen and (max-width: 510px) {
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .container .scores {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 42px;
+  }
+
+  .container form {
+    padding: 0;
+  }
+
+  .container form input {
+    width: 91.5%;
+    height: 30px;
+    padding: 5px 10px;
+    margin: 10px 0;
+  }
+}
