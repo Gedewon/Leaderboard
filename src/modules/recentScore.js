@@ -29,7 +29,7 @@ export default () => {
             });
         },
     ).catch(() => {
-        scoreList.innerHTML = ' Error Loading ';
+        scoreList.innerHTML = ' Error Loading ... ';
     });
     wrapper.appendChild(heading);
     wrapper.appendChild(scoreList);
