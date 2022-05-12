@@ -1,14 +1,9 @@
-import _ from "lodash";
-import "./style.css";
-const a = "gedi";
+import './style.css';
+import addScore from './modules/addScore.js';
+import recentScore from './modules/recentScore.js';
 
-function component() {
-  const element = document.createElement("div");
-
-  // Lodash, currently included via a script, is required for this line to work
-  element.innerHTML = _.join(["Hello", "webpack"], " ");
-
-  return element;
-}
-
-document.body.appendChild(component());
+const container = document.createElement('div');
+container.classList.add('container');
+container.appendChild(recentScore());
+container.appendChild(addScore());
+document.body.appendChild(container);
