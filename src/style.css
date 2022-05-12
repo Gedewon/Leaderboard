@@ -39,7 +39,7 @@ h3 {
 }
 
 .recent-score:nth-child(even) {
-    background-color: rgb(134, 145, 232);
+    background-color: rgb(154, 155, 164);
 }
 
 .container form {
